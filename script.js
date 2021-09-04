@@ -17,7 +17,7 @@ var time;
 
 function startdraw(){  
   document.getElementById("buttonStart").disabled = true;
-  document.getElementById("onearmbandit").src = "/oneArmBanditDown.png";  
+  document.getElementById("onearmbandit").src = "./oneArmBanditDown.png";  
   drawfood();  
 }  
 function drawfood(){
@@ -35,6 +35,6 @@ function drawfood(){
 function enddraw(){  
   window.clearTimeout(time);  
   document.getElementById("buttonStart").disabled = false;
-  document.getElementById("onearmbandit").src = "/oneArmBandit.png";    
+  document.getElementById("onearmbandit").src = "./oneArmBandit.png";    
   foods.splice(index, 1);
 } 
